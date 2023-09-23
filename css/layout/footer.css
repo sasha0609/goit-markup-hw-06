@@ -1,0 +1,216 @@
+/* 
+-------MOBILE-------
+*/
+.footer {
+  background-color: #2e2f42;
+  padding-top: 96px;
+  padding-bottom: 96px;
+}
+.container-footer {
+  display: flex;
+  flex-direction: column;
+  gap: 72px;
+}
+.left-container-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.logo-in-footer {
+  color: #4d5ae5;
+  font-family: "Raleway", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.17;
+  letter-spacing: 0.54px;
+  text-transform: uppercase;
+  text-decoration: none;
+  margin-bottom: 16px;
+  display: inline-block;
+  width: 115px;
+  height: 24px;
+}
+.part-of-logo-in-footer {
+  color: #f4f4fd;
+  font-family: "Raleway", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.17;
+  letter-spacing: 0.54px;
+  text-transform: uppercase;
+}
+.finish-page {
+  font-family: "Roboto", sans-serif;
+  line-height: 1.5;
+  letter-spacing: 0.32px;
+  color: #f4f4fd;
+  width: 288px;
+}
+.right-container-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.footer-page {
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+  margin-bottom: 16px;
+}
+.footer-list-social-media-icon {
+  list-style-type: none;
+  gap: 16px;
+}
+.item-link-footer-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: #4d5ae5;
+  border-radius: 50%;
+}
+.mailing-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.mailing-page {
+  margin-bottom: 16px;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+.form-mailing {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.mailing-input {
+  display: block;
+  width: 288px;
+  height: 40px;
+  border-radius: 4px;
+  border: 1px solid #fff;
+  background-color: transparent;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  padding-left: 16px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  opacity: 0.3;
+}
+.mailing-input::placeholder {
+  color: #fff;
+  opacity: 0.6;
+}
+.btn-subscribe {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  width: 165px;
+  height: 40px;
+  border-radius: 4px;
+  background: #4d5ae5;
+  padding: 8px 24px;
+  color: #fff;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  border: none;
+  cursor: pointer;
+}
+.subscribe-icon {
+  fill: #fff;
+}
+/* 
+------------TABLET--------
+*/
+@media screen and (min-width: 768px) {
+  .footer {
+    padding-left: 92px;
+  }
+  .container-footer {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    row-gap: 72px;
+    column-gap: 24px;
+  }
+  .left-container-footer {
+    align-items: start;
+  }
+  .right-container-footer {
+    align-items: start;
+  }
+  .mailing-wrap {
+    align-items: start;
+  }
+  .form-mailing {
+    flex-direction: row;
+    gap: 24px;
+  }
+}
+@media screen and (min-width: 1158px) {
+  .footer {
+    padding: 100px 0;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .container-footer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: baseline;
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+    gap: 80px;
+  }
+  .finish-page {
+    width: 264px;
+    text-align: left;
+  }
+  .right-container-footer {
+    margin-left: 40px;
+  }
+  .item-link-footer-icon {
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .item-link-footer-icon:hover,
+  .item-link-footer-icon:focus {
+    background-color: #31d0aa;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .form-mailing {
+    flex-direction: row;
+  }
+  .mailing-input {
+    display: block;
+    width: 264px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    opacity: 1;
+  }
+  .mailing-input::placeholder {
+    color: #fff;
+    opacity: 1;
+  }
+  .mailing-input:focus {
+    border-color: #fff;
+    outline: transparent;
+  }
+  .subscribe-icon {
+    margin-left: 16px;
+  }
+}
